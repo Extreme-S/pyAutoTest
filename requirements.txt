@@ -1,0 +1,8 @@
+selenium==3.141.0
+pytest==6.1.2
+pytest-html==3.0.0
+pytest-rerunfailures==9.1.1
+click==7.1.2
+poium==1.0.0
+ddt~=1.4.2
+py~=1.10.0

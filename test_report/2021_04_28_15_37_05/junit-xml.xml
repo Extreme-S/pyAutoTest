@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<testsuites>
+    <testsuite name="pytest" errors="0" failures="0" skipped="0" tests="1" time="20.368"
+               timestamp="2021-04-28T15:37:05.929973" hostname="PC-20210425PVWR">
+        <testcase classname="test_dir.test_login.TestLogin" name="test_baidu_search_case" time="19.963"/>
+    </testsuite>
+</testsuites>
