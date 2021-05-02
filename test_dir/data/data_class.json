@@ -1,14 +1,11 @@
-{
-  "test1": {
-    "typename": "分类1",
-    "msg": "分类1"
+[
+  {
+    "classname": "分类1"
   },
-  "test2": {
-    "typename": "分类2",
-    "msg": "分类2"
+  {
+    "classname": "分类2"
   },
-  "test3": {
-    "typename": "分类3",
-    "msg": "分类3"
+  {
+    "classname": "分类3"
   }
-}
+]

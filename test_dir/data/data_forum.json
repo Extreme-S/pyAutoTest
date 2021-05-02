@@ -1,0 +1,14 @@
+[
+  {
+    "forum_name": "板块1",
+    "parent_class": "分类1"
+  },
+  {
+    "forum_name": "板块2",
+    "parent_class": "分类2"
+  },
+  {
+    "forum_name": "板块3",
+    "parent_class": "分类3"
+  }
+]
