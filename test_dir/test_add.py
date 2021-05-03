@@ -34,6 +34,10 @@ class TestAdd(unittest.TestCase):
         cls.driver.switch_to.frame('main')
         cls.page = page
 
+    @classmethod
+    def tearDownClass(cls):
+        cls.driver.quit()
+
     @ddt.file_data("F:/PyProjects/pyAutoTest/test_dir/data/data_class.json")
     @ddt.unpack  # 每次运行都会从 data 中取出一组数据，动态生成一个独立的测试用例方法
     def test1_add_class(self, classname):
@@ -59,6 +63,7 @@ class TestAdd(unittest.TestCase):
 
 
 def send_mail(report):
+    """用 yagmail 发送邮件"""
     yag = yagmail.SMTP(user="1716224950@qq.com", password="tydqvqptzqobbjji", host="smtp.qq.com")
     subject = "自动化测试报告"
     contents = "测试报告请查看附件"
@@ -73,4 +78,4 @@ if __name__ == '__main__':
     runner = HTMLTestRunner.HTMLTestRunner(stream=fp, title=u"软件测试报告", description=u"用例执行过程")
     runner.run(suit)
     fp.close()
-    send_mail(report_html)
+    send_mail(report_html)  # 发送邮件

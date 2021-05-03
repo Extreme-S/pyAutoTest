@@ -1,0 +1,38 @@
+[
+  {
+    "case": 1,
+    "desc": "用户密码正确",
+    "username": "admin",
+    "pwd": "123456"
+  },
+  {
+    "case": 2,
+    "desc": "密码不正确",
+    "username": "admin",
+    "pwd": "111111"
+  },
+  {
+    "case": 3,
+    "desc": "用户名不正确",
+    "username": "admin2",
+    "pwd": "123456"
+  },
+  {
+    "case": 4,
+    "desc": "用户名为空",
+    "username": "",
+    "pwd": "123456"
+  },
+  {
+    "case": 5,
+    "desc": "密码不正确",
+    "username": "admin",
+    "pwd": "111111"
+  },
+  {
+    "case": 6,
+    "desc": "密码为空",
+    "username": "admin",
+    "pwd": ""
+  }
+]

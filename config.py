@@ -15,8 +15,8 @@ class RunConfig:
 
     # 配置运行的 URL
     # url = "https://www.baidu.com"
-    # url = "http://localhost/phpwind/" # 登录url
-    url = "http://localhost/phpwind/admin.php"  # 管理员添加分类url
+    url = "http://localhost/phpwind/"  # 登录功能测试的 url
+    # url = "http://localhost/phpwind/admin.php"  # 管理员添加分类板块测试的 url
 
     # 失败重跑次数
     rerun = "0"
