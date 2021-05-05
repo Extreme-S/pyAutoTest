@@ -35,24 +35,25 @@ PC机，操作系统Windows7，软件工具：python3
 |    |    |    |    |
 
 （1）核心代码截屏
-
-![图片](https://uploader.shimo.im/f/Qy6GT40hJzMJZIWv.png!thumbnail?fileGuid=dyYGWJ96yXCRpDgW)
+![image](https://user-images.githubusercontent.com/58586834/117153109-3e5bf380-aded-11eb-88de-0a4c6542c683.png)
 
 TestLogin测试类的类初始化和结束方法
 
-![图片](https://uploader.shimo.im/f/xyfseXfCZzMhnkRv.png!thumbnail?fileGuid=dyYGWJ96yXCRpDgW)登陆测试逻辑实现
+![image](https://user-images.githubusercontent.com/58586834/117153123-41ef7a80-aded-11eb-9bd5-f191caca3ecd.png)
+登陆测试逻辑实现
 
-![图片](https://uploader.shimo.im/f/IYBvtnjKTHHaeedA.png!thumbnail?fileGuid=dyYGWJ96yXCRpDgW)
+![image](https://user-images.githubusercontent.com/58586834/117153173-4ddb3c80-aded-11eb-9f6f-3d6d2e5e77f6.png)
 
 csv日志格式写入
 
 （2）测试数据截屏
 
-![图片](https://uploader.shimo.im/f/M6uoj9HcQic1QGyq.png!thumbnail?fileGuid=dyYGWJ96yXCRpDgW)![图片](https://uploader.shimo.im/f/aKBVoslZKUGc90Dq.png!thumbnail?fileGuid=dyYGWJ96yXCRpDgW)
+![image](https://user-images.githubusercontent.com/58586834/117153234-5c295880-aded-11eb-99fe-43589f7d4793.png)![image](https://user-images.githubusercontent.com/58586834/117153247-60557600-aded-11eb-9902-ef99fb3f6914.png)
+
 
 （3）日志报告截屏
 
-![图片](https://uploader.shimo.im/f/zIIQoQGaviaj4bLK.png!thumbnail?fileGuid=dyYGWJ96yXCRpDgW)
+![image](https://user-images.githubusercontent.com/58586834/117153279-64819380-aded-11eb-8242-2e2781e21732.png)
 
 ## unittest实验成果（可选）
 
