@@ -15,3 +15,4 @@ class PublishPage(Page):
     content_input = Element(xpath='/html/body', describe="新帖内容输入")
     commit_button = Element(xpath='//*[@id="main"]/form[1]/div/table[2]/tbody/tr[4]/td[1]/div/input[1]',
                             describe="新帖提交")
+    forum3 = Element(xpath='//*[@id="fn_61"]', describe="板块3")

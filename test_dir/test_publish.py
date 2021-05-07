@@ -28,5 +28,8 @@ class TestPublish:
         page.pwd_input = "123456"
         page.login_button.click()
 
-    def test_publish(self):
+    def test_publish(self, browser):
         page = self.page
+        page.forum3.click()
+        page.publish_option.click()
+        page.title_input = "my-test"
