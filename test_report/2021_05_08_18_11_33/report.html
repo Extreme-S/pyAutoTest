@@ -428,7 +428,7 @@ function filter_table(elem) { // eslint-disable-line no-unused-vars
 }
 </script>
     <h1>report.html</h1>
-    <p>Report generated on 28-Apr-2021 at 15:51:42 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v3.0.0</p>
+    <p>Report generated on 08-May-2021 at 18:11:37 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v3.0.0</p>
     <h2>Environment</h2>
     <table id="environment">
       <tr>
@@ -444,8 +444,8 @@ function filter_table(elem) { // eslint-disable-line no-unused-vars
         <td>Python</td>
         <td>3.9.4</td></tr></table>
     <h2>Summary</h2>
-    <p>5 tests ran in 78.30 seconds. </p>
-    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="passed">5 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="failed">0 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>, <input checked="true" class="filter" data-test-result="rerun" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="rerun">0 rerun</span>
+    <p>0 tests ran in 3.72 seconds. </p>
+    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="passed">0 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="failed">0 failed</span>, <input checked="true" class="filter" data-test-result="error" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="error">1 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>, <input checked="true" class="filter" data-test-result="rerun" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="rerun">0 rerun</span>
     <h2>Results</h2>
     <table id="results-table">
       <thead id="results-table-head">
@@ -456,78 +456,13 @@ function filter_table(elem) { // eslint-disable-line no-unused-vars
           <th class="sortable numeric" col="duration">Duration</th></tr>
         <tr hidden="true" id="not-found-message">
           <th colspan="4">No results found. Try to check the filters</th></tr></thead>
-      <tbody class="passed results-table-row">
+      <tbody class="error results-table-row">
         <tr>
-          <td class="col-result">Passed</td>
-          <td class="col-name">test_dir/test_login.py::TestLogin::test_success_login</td>
-          <td>
-            <html>
-              <head>
-                <meta name="Content-Type" value="text/html; charset=latin1"/></head>
-              <body>
-                <p>        用户名正确，密码也正确</p>
-                <p>        </p></body></html></td>
-          <td class="col-duration">17.03</td></tr>
+          <td class="col-result">Error</td>
+          <td class="col-name">test_dir/test_publish.py::TestPublish::test_publish::setup</td>
+          <td>No case description</td>
+          <td class="col-duration">3.24</td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="empty log">No log output captured.</div></td></tr></tbody>
-      <tbody class="passed results-table-row">
-        <tr>
-          <td class="col-result">Passed</td>
-          <td class="col-name">test_dir/test_login.py::TestLogin::test_false_username</td>
-          <td>
-            <html>
-              <head>
-                <meta name="Content-Type" value="text/html; charset=latin1"/></head>
-              <body>
-                <p>        用户名不正确</p>
-                <p>        </p></body></html></td>
-          <td class="col-duration">14.69</td></tr>
-        <tr>
-          <td class="extra" colspan="4">
-            <div class="empty log">No log output captured.</div></td></tr></tbody>
-      <tbody class="passed results-table-row">
-        <tr>
-          <td class="col-result">Passed</td>
-          <td class="col-name">test_dir/test_login.py::TestLogin::test_false_pwd</td>
-          <td>
-            <html>
-              <head>
-                <meta name="Content-Type" value="text/html; charset=latin1"/></head>
-              <body>
-                <p>        用户名正确，密码不正确</p>
-                <p>        </p></body></html></td>
-          <td class="col-duration">14.83</td></tr>
-        <tr>
-          <td class="extra" colspan="4">
-            <div class="empty log">No log output captured.</div></td></tr></tbody>
-      <tbody class="passed results-table-row">
-        <tr>
-          <td class="col-result">Passed</td>
-          <td class="col-name">test_dir/test_login.py::TestLogin::test_without_username</td>
-          <td>
-            <html>
-              <head>
-                <meta name="Content-Type" value="text/html; charset=latin1"/></head>
-              <body>
-                <p>        用户名为空</p>
-                <p>        </p></body></html></td>
-          <td class="col-duration">14.78</td></tr>
-        <tr>
-          <td class="extra" colspan="4">
-            <div class="empty log">No log output captured.</div></td></tr></tbody>
-      <tbody class="passed results-table-row">
-        <tr>
-          <td class="col-result">Passed</td>
-          <td class="col-name">test_dir/test_login.py::TestLogin::test_without_pwd</td>
-          <td>
-            <html>
-              <head>
-                <meta name="Content-Type" value="text/html; charset=latin1"/></head>
-              <body>
-                <p>        密码为空</p>
-                <p>        </p></body></html></td>
-          <td class="col-duration">16.87</td></tr>
-        <tr>
-          <td class="extra" colspan="4">
+            <div><div><img src="image/test_publish.py_TestPublish_test_publish.png" alt="screenshot" style="width:304px;height:228px;" onclick="window.open(this.src)" align="right"/></div></div>
             <div class="empty log">No log output captured.</div></td></tr></tbody></table></body></html>

@@ -12,7 +12,7 @@ class PublishPage(Page):
     index_page = Element(xpath='//*[@id="nav-global"]/li[1]/a', describe="首页")
     publish_option = Element(xpath='//*[@id="td_post"]', describe="发表新帖选项")
     title_input = Element(xpath='//*[@id="atc_title"]', describe="新帖标题输入")
-    content_input = Element(xpath='/html/body', describe="新帖内容输入")
+    content_input = Element(xpath='//*[@id="textarea"]', describe="新帖内容输入")
     commit_button = Element(xpath='//*[@id="main"]/form[1]/div/table[2]/tbody/tr[4]/td[1]/div/input[1]',
                             describe="新帖提交")
     forum3 = Element(xpath='//*[@id="fn_61"]', describe="板块3")

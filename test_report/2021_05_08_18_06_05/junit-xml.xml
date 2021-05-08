@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="0" skipped="0" tests="1" time="27.642" timestamp="2021-05-08T18:06:05.702313" hostname="PC-20210425PVWR"><testcase classname="test_dir.test_publish.TestPublish" name="test_publish" time="27.472" /></testsuite></testsuites>

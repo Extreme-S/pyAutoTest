@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="1" failures="0" skipped="0" tests="1" time="3.721" timestamp="2021-05-08T18:11:33.449400" hostname="PC-20210425PVWR"><testcase classname="test_dir.test_publish.TestPublish" name="test_publish" time="3.238"><error message="failed on setup with &quot;TypeError: setup_class() missing 2 required positional arguments: 'browser' and 'base_url'&quot;">cls = &lt;class '_pytest.runner.CallInfo'&gt;
+func = &lt;function call_runtest_hook.&lt;locals&gt;.&lt;lambda&gt; at 0x000001C61F74B310&gt;
+when = 'setup'
+reraise = (&lt;class '_pytest.outcomes.Exit'&gt;, &lt;class 'KeyboardInterrupt'&gt;)
+
+    @classmethod
+    def from_call(
+        cls,
+        func: "Callable[[], TResult]",
+        when: "Literal['collect', 'setup', 'call', 'teardown']",
+        reraise: "Optional[Union[Type[BaseException], Tuple[Type[BaseException], ...]]]" = None,
+    ) -&gt; "CallInfo[TResult]":
+        excinfo = None
+        start = timing.time()
+        precise_start = timing.perf_counter()
+        try:
+&gt;           result = func()  # type: Optional[TResult]
+
+E:\Service\Python3\lib\site-packages\_pytest\runner.py:310: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+E:\Service\Python3\lib\site-packages\_pytest\runner.py:256: in &lt;lambda&gt;
+    lambda: ihook(item=item, **kwds), when=when, reraise=reraise
+E:\Service\Python3\lib\site-packages\pluggy\hooks.py:286: in __call__
+    return self._hookexec(self, self.get_hookimpls(), kwargs)
+E:\Service\Python3\lib\site-packages\pluggy\manager.py:93: in _hookexec
+    return self._inner_hookexec(hook, methods, kwargs)
+E:\Service\Python3\lib\site-packages\pluggy\manager.py:84: in &lt;lambda&gt;
+    self._inner_hookexec = lambda hook, methods, kwargs: hook.multicall(
+E:\Service\Python3\lib\site-packages\_pytest\runner.py:151: in pytest_runtest_setup
+    item.session._setupstate.prepare(item)
+E:\Service\Python3\lib\site-packages\_pytest\runner.py:451: in prepare
+    raise e
+E:\Service\Python3\lib\site-packages\_pytest\runner.py:448: in prepare
+    col.setup()
+E:\Service\Python3\lib\site-packages\_pytest\python.py:1633: in setup
+    self._request._fillfixtures()
+E:\Service\Python3\lib\site-packages\_pytest\fixtures.py:572: in _fillfixtures
+    item.funcargs[argname] = self.getfixturevalue(argname)
+E:\Service\Python3\lib\site-packages\_pytest\fixtures.py:585: in getfixturevalue
+    fixturedef = self._get_active_fixturedef(argname)
+E:\Service\Python3\lib\site-packages\_pytest\fixtures.py:605: in _get_active_fixturedef
+    self._compute_fixture_value(fixturedef)
+E:\Service\Python3\lib\site-packages\_pytest\fixtures.py:689: in _compute_fixture_value
+    fixturedef.execute(request=subrequest)
+E:\Service\Python3\lib\site-packages\_pytest\fixtures.py:1070: in execute
+    result = hook.pytest_fixture_setup(fixturedef=self, request=request)
+E:\Service\Python3\lib\site-packages\pluggy\hooks.py:286: in __call__
+    return self._hookexec(self, self.get_hookimpls(), kwargs)
+E:\Service\Python3\lib\site-packages\pluggy\manager.py:93: in _hookexec
+    return self._inner_hookexec(hook, methods, kwargs)
+E:\Service\Python3\lib\site-packages\pluggy\manager.py:84: in &lt;lambda&gt;
+    self._inner_hookexec = lambda hook, methods, kwargs: hook.multicall(
+E:\Service\Python3\lib\site-packages\_pytest\fixtures.py:1124: in pytest_fixture_setup
+    result = call_fixture_func(fixturefunc, request, kwargs)
+E:\Service\Python3\lib\site-packages\_pytest\fixtures.py:921: in call_fixture_func
+    fixture_result = next(generator)
+E:\Service\Python3\lib\site-packages\_pytest\python.py:799: in xunit_setup_class_fixture
+    _call_with_optional_argument(func, self.obj)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+func = &lt;function TestPublish.setup_class at 0x000001C61F74B3A0&gt;
+arg = &lt;class 'test_dir.test_publish.TestPublish'&gt;
+
+    def _call_with_optional_argument(func, arg) -&gt; None:
+        """Call the given function with the given argument if func accepts one argument, otherwise
+        calls func without arguments."""
+        arg_count = func.__code__.co_argcount
+        if inspect.ismethod(func):
+            arg_count -= 1
+        if arg_count:
+&gt;           func(arg)
+E           TypeError: setup_class() missing 2 required positional arguments: 'browser' and 'base_url'
+
+E:\Service\Python3\lib\site-packages\_pytest\python.py:732: TypeError</error></testcase></testsuite></testsuites>
