@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="1" skipped="0" tests="5" time="65.713" timestamp="2021-05-10T08:49:14.824283" hostname="PC-20210425PVWR"><testcase classname="test_dir.test_publish" name="test_login_case" time="21.943" /><testcase classname="test_dir.test_publish" name="test_publish_case[case1]" time="11.223" /><testcase classname="test_dir.test_publish" name="test_publish_case[case2]" time="9.891" /><testcase classname="test_dir.test_publish" name="test_publish_case[case3]" time="9.886"><failure message="assert '标题3' in '&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;head&gt;\n&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot;...oll(x,y){document.all.upPanel.scrollTop=y;document.all.upPanel.scrollLeft=x;}\n&lt;/script&gt;\n&lt;![endif]--&gt;\n&lt;/body&gt;&lt;/html&gt;'&#10; +  where '&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;head&gt;\n&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot;...oll(x,y){document.all.upPanel.scrollTop=y;document.all.upPanel.scrollLeft=x;}\n&lt;/script&gt;\n&lt;![endif]--&gt;\n&lt;/body&gt;&lt;/html&gt;' = &lt;selenium.webdriver.chrome.webdriver.WebDriver (session=&quot;d7da070da923afe76aabafa56fade4a1&quot;)&gt;.page_source">name = '3', title = '标题3', content = '3'
+browser = &lt;selenium.webdriver.chrome.webdriver.WebDriver (session="d7da070da923afe76aabafa56fade4a1")&gt;
+base_url = 'http://localhost/phpwind/'
+
+    @pytest.mark.run(order=2)
+    @pytest.mark.parametrize(
+        "name, title, content",
+        [
+            ("1", "标题1", "这是内容1"),
+            ("2", "", "这是内容2"),
+            ("3", "标题3", "3"),
+            ("4", "", ""),
+        ],
+        ids=["case1", "case2", "case3", "case4"]
+    )
+    def test_publish_case(name, title, content, browser, base_url):
+        page = PublishPage(browser)
+        page.back_forum3.click()
+        page.publish_option.click()
+        page.title_input = title  # 输入标题
+        page.content_input = content  # 输入内容
+        page.commit_button.click()  # 提交按钮
+        sleep(2)
+&gt;       assert title in browser.page_source
+E       assert '标题3' in '&lt;html xmlns="http://www.w3.org/1999/xhtml"&gt;&lt;head&gt;\n&lt;meta http-equiv="Content-Type" content="text/html; charset=utf-8"...oll(x,y){document.all.upPanel.scrollTop=y;document.all.upPanel.scrollLeft=x;}\n&lt;/script&gt;\n&lt;![endif]--&gt;\n&lt;/body&gt;&lt;/html&gt;'
+E        +  where '&lt;html xmlns="http://www.w3.org/1999/xhtml"&gt;&lt;head&gt;\n&lt;meta http-equiv="Content-Type" content="text/html; charset=utf-8"...oll(x,y){document.all.upPanel.scrollTop=y;document.all.upPanel.scrollLeft=x;}\n&lt;/script&gt;\n&lt;![endif]--&gt;\n&lt;/body&gt;&lt;/html&gt;' = &lt;selenium.webdriver.chrome.webdriver.WebDriver (session="d7da070da923afe76aabafa56fade4a1")&gt;.page_source
+
+test_dir\test_publish.py:58: AssertionError</failure></testcase><testcase classname="test_dir.test_publish" name="test_publish_case[case4]" time="12.058" /></testsuite></testsuites>

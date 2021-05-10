@@ -19,8 +19,6 @@ def get_data(file_path):
     data = []
     with(open(file_path, "r")) as f:
         dict_data = json.loads(f.read())
-        print("=========\n")
-        print(dict_data)
         for i in dict_data:
             data.append(tuple(i.values()))
     return data
@@ -43,18 +41,18 @@ def test_login_case(browser, base_url):
     "name, title, content",
     [
         ("1", "标题1", "这是内容1"),
-        ("2", "标题2", "这是内容2"),
-        ("3", "标题3", "这是内容3"),
+        ("2", "", "这是内容2"),
+        ("3", "标题3", "3"),
+        ("4", "", ""),
     ],
-    ids=["case1", "case2", "case3"]
+    ids=["case1", "case2", "case3", "case4"]
 )
 def test_publish_case(name, title, content, browser, base_url):
     page = PublishPage(browser)
+    page.back_forum3.click()
     page.publish_option.click()
-    # page.title_input = "标题"  # 输入标题
-    # page.content_input = "内容"  # 输入内容
     page.title_input = title  # 输入标题
     page.content_input = content  # 输入内容
     page.commit_button.click()  # 提交按钮
     sleep(2)
-    assert 1 == 1
+    assert title in browser.page_source
